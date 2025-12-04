@@ -21,6 +21,9 @@ header{
     font-weight: bold;
     
 }
+.Info ul{
+    list-style: none;
+}
 .Info{
     padding-top:2rem;
     min-height: 100vh;
