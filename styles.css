@@ -24,7 +24,7 @@ header{
 .Info{
     padding-top:2rem;
     min-height: 100vh;
-    background: linear-gradient(rgba(0, 0, 0, 0.87),rgba(0, 0, 0, 0.521)),url(../fotos/p1.jpeg); 
+    background: linear-gradient(rgba(0, 0, 0, 0.87),rgba(0, 0, 0, 0.521)),url(fotos/p1.jpeg); 
     width: 100%;
     background-position: center;
     display: flex;
@@ -39,7 +39,7 @@ header{
 .Info1{
     padding-top:2rem;
     min-height: 100vh;
-    background: linear-gradient(rgba(0, 0, 0, 0.87),rgba(0, 0, 0, 0.521)),url(../fotos/theo.jpeg); 
+    background: linear-gradient(rgba(0, 0, 0, 0.87),rgba(0, 0, 0, 0.521)),url(fotos/theo.jpeg); 
     width: 100%;
     background-position: center;
     display: flex;
@@ -65,7 +65,7 @@ header{
     
     padding-top:2rem;
     min-height: 100vh;
-    background: linear-gradient(rgba(0, 0, 0, 0.87),rgba(0, 0, 0, 0.521)); /* Eliminada la url() vacía */
+    background: linear-gradient(rgba(0, 0, 0, 0.87),rgba(0, 0, 0, 0.521)); 
     width: 100%;
     background-position: center;
     display: flex;
@@ -181,7 +181,7 @@ textarea{
 #contacto{
     padding-top:2rem;
     min-height: 100vh;
-    background: linear-gradient(rgba(0, 0, 0, 0.87),rgba(0, 0, 0, 0.521)); /* Eliminada la url() vacía */
+    background: linear-gradient(rgba(0, 0, 0, 0.87),rgba(0, 0, 0, 0.521)); 
     width: 100%;
     background-position: center;
     display: flex;
