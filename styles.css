@@ -149,7 +149,14 @@ header{
     object-fit: cover;
     margin: 1rem auto;
     border-radius: 100%; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 1);
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
 }
+.Foto:hover{
+    transform: scale(1.06);
+}
+
 
 #proyectos .lista li a:hover {
     background-color: rgba(134, 155, 201, 0.4); 
