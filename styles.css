@@ -1,0 +1,282 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing:  border-box;
+    font-family: 'Times New Roman', Times;
+    
+}
+body {
+    line-height: 1.6;
+    background-size: cover;
+    background-color:  rgb(134, 155, 201);
+    margin: 0; 
+}
+
+#Menu {
+    display: none;
+}
+header{
+    
+    text-align: center;
+    font-weight: bold;
+    
+}
+.Info{
+    padding-top:2rem;
+    min-height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.87),rgba(0, 0, 0, 0.521)),url(../fotos/p1.jpeg); 
+    width: 100%;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+    color: rgb(255, 255, 255);
+    padding: 0 1rem;
+}
+.Info1{
+    padding-top:2rem;
+    min-height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.87),rgba(0, 0, 0, 0.521)),url(../fotos/theo.jpeg); 
+    width: 100%;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+    color: rgb(255, 255, 255);
+    padding: 0 1rem;
+}
+#proyectos .lista li a {
+    display: inline;
+}
+
+#proyectos .lista li a h4,
+#proyectos .lista li a p {
+    display: inline;
+    margin: 0;
+    padding: 0;
+}
+#proyectos {
+    
+    padding-top:2rem;
+    min-height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.87),rgba(0, 0, 0, 0.521)); /* Eliminada la url() vacía */
+    width: 100%;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    
+    color: rgb(255, 255, 255);
+    padding: 0 1rem;
+}
+
+.Info p{
+    width: 60%;
+}
+.lista{
+    text-decoration: none;
+    list-style: none;
+    line-height: 3.0;
+}
+
+.Button{
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    padding: 10px;
+    background-color: rgb(134, 155, 201);
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    z-index: 1001;
+    border-radius: 5px;
+}
+
+#SideBar{
+    position: fixed;
+    width: 250px;
+    height: 100%;
+    top: 0;
+    left: 0px;
+    background-color: rgb(134, 155, 201);
+    padding-top: 80px;
+    z-index: 100;
+    transform: translateX(-5000px);
+    transition: transform 0.3s ease;
+}
+
+
+#Menu:checked ~ #SideBar{
+    transform: translateX(0);
+}
+
+#Menu:checked ~ #Page{
+    margin-left: 250px;
+}
+#Page{
+    transition: margin-left 0.3s ease;
+    display: flexbox;
+    border-color: black;
+}
+
+.Page{
+    font-family: 'Times New Roman', Times;
+    margin-top: 2rem;
+    margin-left: 0;
+    transition: margin-left 0.3s ease;
+    padding: 10px;
+    display: flexbox;
+
+    border-color: black;
+}
+.prueba{
+    text-decoration: none;
+    color: rgb(35, 0, 51);
+    text-align: left;
+    margin-left: 3rem;
+}
+.Foto{
+    display: flex;
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+    margin: 1rem auto;
+    border-radius: 100%; 
+}
+
+#proyectos .lista li a:hover {
+    background-color: rgba(134, 155, 201, 0.4); 
+    border: 1px solid rgb(134, 155, 201);
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.8);
+}
+#proyectos .lista li a {
+    display: inline;
+    padding: 5px 10px; 
+    margin: 5px 0;
+    transition: all 0.3s ease-in-out;
+    color: rgb(0, 194, 253); 
+    text-decoration: none;
+}
+.titproyectos {
+    text-align: center;
+}
+#clist{
+    list-style: none;
+}
+#c1list{
+    text-decoration: none;
+    color: white;
+}
+textarea{
+    resize: vertical;
+    height: 150px;
+}
+#contacto{
+    padding-top:2rem;
+    min-height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.87),rgba(0, 0, 0, 0.521)); /* Eliminada la url() vacía */
+    width: 100%;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    list-style: none;
+    color: rgb(255, 255, 255);
+    padding: 4rem 2rem;
+}
+form{
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+input, textarea{
+    padding: .8rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+form button{
+    background-color: rgba(134, 155, 201, 0.4); 
+    border: 1px solid rgb(134, 155, 201);
+    padding: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+form button:hover{
+    background-color: rgba(134, 155, 201, 0.4); 
+}
+footer{
+    text-align: center;
+    padding: 1rem;
+    background-color: rgb(134, 155, 201);
+    color: rgb(0, 0, 0);
+}
+
+/* Mascotas */
+
+#mascotas {
+    background: linear-gradient(rgba(0, 0, 0, 0.95), rgba(0, 0, 0, 0.8));
+    min-height: 100vh; 
+    color: rgb(255, 255, 255);
+}
+
+#mascotasp1 {
+    width: 80%;
+    margin: 1rem auto;
+}
+#m1ascotas{
+    text-align: center;
+    padding: 3rem 2rem;
+}
+
+.listamascotas {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center; 
+    align-items: flex-start;
+    list-style: none;
+
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 2rem; 
+}
+
+.listamascotas article {
+    max-width: 350px;
+    margin-bottom: 1rem;
+    text-align: center;
+    padding: 2rem;
+    height: 610px;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgba(134, 155, 201, 0.3);
+    border-radius: 10px;
+    background-color: rgba(134, 155, 201, 0.1);
+}
+
+
+.imagenes {
+    height: 250px;
+    width: 250px;
+    object-fit: cover;
+    margin: 1rem 0;
+    border: 5px solid rgb(134, 155, 201);
+    border-radius: 50%;
+    transition: transform 0.3s ease-in-out, border-color 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.imagenes:hover {
+    transform: scale(1.05); 
+    border-color: rgb(0, 194, 253);
+}
