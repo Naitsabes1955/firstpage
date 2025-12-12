@@ -191,6 +191,7 @@ header{
 }
 #Page{
     transition: margin-left 0.3s ease;
+    background: linear-gradient(rgba(0, 0, 0, 0.87),rgba(0, 0, 0, 0.521)),
 }
 
 .Page{
@@ -230,11 +231,18 @@ header{
     list-style: none;
     margin-bottom: 1rem;
 }
-#c1list{
+.c1list{
     width: 50px auto;
     padding: 2rem ;
     display: flex;
     justify-content: center;
+    border: 2px solid color(black);
+    cursor: pointer;
+}
+.c1list:hover{
+    border-color: violet;
+    transform: scale(1.3s);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5); 
 }
 textarea{
     resize: vertical;
@@ -255,6 +263,7 @@ textarea{
     color: rgb(255, 255, 255);
     padding: 4rem 2rem;
 }
+
 form{
     max-width: 600px;
     margin: 0 auto;
@@ -286,7 +295,18 @@ footer{
 }
 
 /* Mascotas */
-
+#mosaico{
+    min-height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.87),rgba(0, 0, 0, 0.521)); 
+    width: 100%;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 1rem;
+}
 #animals {
     background: linear-gradient(rgba(0, 0, 0, 0.87),rgba(0, 0, 0, 0.521)); 
     min-height: 100vh; 
@@ -308,7 +328,6 @@ footer{
     justify-content: center; 
     align-items: flex-start;
     list-style: none;
-
     max-width: 1200px;
     margin: 0 auto;
     gap: 2rem; 
@@ -345,4 +364,43 @@ li{
 .imagenes:hover {
     transform: scale(1.05); 
     border-color: rgb(0, 194, 253);
+}
+/* ---GALERÍA MOSAICO --- */
+
+.layout {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 1.5rem;
+    max-width: 1200px;
+    margin: 4rem auto; /* Centrar y darle espacio superior/inferior */
+    
+    padding: 0 1rem; /* Padding lateral para que no toque los bordes en móviles */
+}
+
+/* Estilo para cada imagen dentro del mosaico */
+.layout img {
+    /* 1. Mantenemos la relación de aspecto y cubrimos el área */
+    width: 100%;
+    height: 300px; /* Alto fijo o mediano para las imágenes del mosaico */
+    object-fit: cover;
+    border: 1px solid rgba(49, 37, 37, 0.3);
+    background-color: rgba(0, 0, 0, 0.897);
+    transition: transform 0.3s ease-in-out, border-color 0.3s ease-in-out;
+}
+
+.layout img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5); 
+    cursor: pointer;
+}
+
+/* En dispositivos más pequeños, forzamos una sola columna para una mejor visualización (opcional, ya lo hace auto-fit, pero para asegurar un tamaño mínimo cómodo) */
+@media (max-width: 550px) {
+    .layout {
+        /* En pantallas muy pequeñas, cada imagen ocupa todo el ancho */
+        grid-template-columns: 1fr;
+    }
+    .layout img {
+        height: 250px; /* Ajustamos un poco la altura en móviles */
+    }
 }
