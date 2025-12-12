@@ -1,117 +1,74 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portafolio</title>
     <link rel="stylesheet" href="styles.css">
 </head>
-<body>
-    <main>
-        <input type = "checkbox" id = "Menu" hidden>
-        <label for = "Menu" class = "Button"> &#9776; Menu </label>
+<body id="mascotas">
 
-        <nav id = "SideBar">
-            <ul>
-                <li>
-                    <a class ="prueba" href="mascotas.html">Mascotas</a>
-                </li>
-            </ul>
-        </nav>
+    <input type = "checkbox" id = "Menu" hidden>
+    <label for = "Menu" class = "Button"> &#9776; Menu </label>
 
-        <div id="Page">
-            
-        <section class="Info">
+    <nav id = "SideBar">
+        <ul>
+            <li><a class ="prueba" href="index.html">Principal</a></li>
+        </ul>
+    </nav>
+
+    <div id="Page">
+        <section class="Info1">
             <header>
-                <ul>
-                    <h1>Juan Sebastian Mosquera Murillo</h1>
-                    <li><a><img class="Foto" src="fotos/n1.jpeg" alt="asd"></a></li>
-                </ul>
+                <h1>Mis mascotas!</h1>
+                <p id="descripcion" >Para mi las mascotas son un pilar fundamental para mi vida, para mi los animales y las mascotas que sean o no mios son super importantes y son algo que me han permitido motivarme 
+                y apoyarme emocionalmente, son algo con lo que yo no podria vivir personalmente, me fascinan mucho y estas son mis mascotas, para mi son el 45% de mi vida.
+                </p>
             </header>
-        
-            <h2>Informacion Personal</h2>
-            <p>Que tal?, Soy un chico que le interesa la programacion, le gustan los videojuegos, le gusta la naturaleza, salir a comer y pasar el tiempo con sus amigos, 
-            me gusta conocer nuevas personas, me gusta el color azul, los animales, los acuarios y muchas cosas mas.
-            Tengo 16 años y actualmente salí del grado 11 (el 28 de noviembre) y quiero continuar en Riwi para ser el mejor desarrollador
-            </p>
         </section>
-        
-        <section id="proyectos">
-            <h2 class="titproyectos">Proyectos</h2>
-            <div class="proyectos-grid-container">
-                
-                <div class="proyecto-item">
-                    <a href="https://juanjo-77.github.io/task-m2/Profesores/profesores.html" target="_blank">
-                        <h4>Proyecto #1</h4>
-                    </a>
-                    <p>Con este proyecto logramos crear una pagina web optimizada en la celula 5, mi parte se encuentra en el apartado de profesores. Donde deberia usar una tabla
-                        mostrando de 5 a 8 maestros con Nombre Especialidad Experiencia Disponibilidad y destacar a 2 maestros con la herramienta article alli mismo..
-                    </p>
-                </div>
-                <div class="proyecto-item">
-                    <a href="../calendar/calendar.html" target="_blank">
-                        <h4>Proyecto #2</h4>
-                    </a>
-                    <p>Este proyecto, tambien fue un trabajo de la Celula 2 semana 2; lo importo directamente a mi pagina web para poder viajar de manera facil, rapida y sencilla entre los compartimientos que tiene esta pagina
-                        Fue un calendario muy divertido de hacer, y aunque al inicio no sabia como empezar, con el pasar del tiempo descubrí que se podia hacer de una manera muy facil y sencilla
-                    </p>
-                </div>
-                <div class="proyecto-item item-separador">
-                    <!/*Puse las dos clases proyecto-item item-separador para usar múltiples clases en un solo elemento y se incluyó para que el elemento herede el conjunto básico de estilos que tienen todos los demás proyectos.
-                La clase item-separador se añadió para aplicar estilos adicionales y específicos que modifican o sobrescriben los estilos heredados de proyecto-item, transformando el contenedor*/>
-                    <h3 class="titulope">Otros Proyectos Y Mi Informacion Personal:</h3>
-                </div>
-                <div class="proyecto-item">
-                    <a href="https://gist.github.com/Naitsabes1955" target="_blank">
-                        <h4>GitHub</h4>
-                    </a>
-                    <p>Con este proyecto quiero poder tener conocimientos y contenido para crecer en mi vida como desarrollador y tener informacion que me permita ayudarme y almacenarla</p>
-                </div>
-                <div class="proyecto-item">
-                    <a href="http://Discordapp.com/users/983825768482230304" target="_blank">
-                        <h4>Herramienta Personal</h4>
-                    </a>
-                    <p>Con esta herramiento he comprendido que no solo se trata de usarla para juegos, si no que tambien con ella puedo usarla para mi vida laboral en este entorno como lo es Riwi</p>
-                </div>
-                <div class="proyecto-item">
-                    <a href="https://youtube.com/@nait-ye9xn?si=ENMCv9yQU-wGOau7" target="_blank">
-                        <h4>YouTube</h4>
-                    </a>
-                    <p>Un proyecto planeado desde que era niño y se volvio un sueño que quizas mas adelante pueda seguir cumpliendo</p>
-                </div>
-                <div class="proyecto-item">
-                    <a href="https://www.instagram.com/naitsabes1955?igsh=MWJwMXVqczA2ZmEycg==&utm_source=ig_contact_invite" target="_blank">
-                        <h4>Instagram</h4>
-                    </a>
-                    <p>No se ilusionen</p>
-                </div>
-                <div class="proyecto-item">
-                    <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">
-                        <h4>:</h4>
-                    </a>
-                    <p>Try</p>
-                </div>
-            </div>
-        </section>
-        <section id="contacto">
-            <h2>Contacto</h2>
-            <form action="https://formsubmit.com/juannait2009@gmail.com" method="post">
-                <ul>
-                <li><a class="c1list" href="mascotas.html">Ir A Mascotas</a></li>
+        <section id="animals">
+            <main>
+                <h2 id="masc-titulo">Estas son mis mascotas:</h2>
+                <ul class="lista-mascotas">
+                    <article>
+                        <h2>Lupita</h2>
+                        <img class="imagenes" src="fotos/pina.jpeg" alt="Lupina <3">
+                        <p>Lupita es una perrita con apenas 1 año y medio, es super juguetona, amigable, territorial y protectora
+                            tambien es fanatica de la leche, la carne y el dulce en todas sus presentaciones!, es de raza, (no se sabe de que, eso nos dijeron al adoptarla)
+                            probablemente un Jack Russell Terrier o quien sabe.
+                        </p>
+                    </article>
+                    <article>
+                        <h2>Sammy</h2>
+                        <img class="imagenes" src="fotos/sammy.jpeg" alt="Chammy <3">
+                        <p>Sammy es una gata con mas de 4 años, es una gata seria pero cuando esta tranquila se vuelve la mas amorosa y busca mimos por montones, es una gata de 3 colores
+                            es una fanatica de la leche, la carne, las alturas y no convive mucho con otros animales, unicamente con lupita y se llevan super bien, les encanta jugar y perseguirse.
+                        </p>
+                    </article>
+                    <article>
+                        <h2>Thomas</h2>
+                        <img class="imagenes" src="fotos/tito1.jpeg" alt="Titomachito <3">
+                        <p>Thomas es un perro super mega energetico, le encanta salir a correr, jugar con otros perros, es un perro muy amoroso y 
+                            es un fanatico tambien de la leche, le encanta la naturaleza, correr y revolcarse en el pasto y es un perseguidor profesional de palomas
+                        </p>
+                    </article>
                 </ul>
-                <input type="hidden" name="_next" value="/"> 
-                <input type="hidden" name="_subject" value="Nuevo mensaje de contacto desde el Portafolio">
-                <input type="text" name="Nombre" placeholder="Nombre" required>
-                <input type="email" name="Email" placeholder="Email" required>
-                <textarea name="Mensaje" placeholder="Mensaje" required></textarea>
-                <button type="submit">Enviar</button>
-                <nav id = "SideBar">
-            
-        </nav>
-            </form>
         </section>
+        <section id="mosaico">
+            <main class="layout maxim">
+                <div><img src="fotos/cham.jpeg" alt="Gata Sammy relajada"></div>
+                <div><img src="fotos/titoypina.jpeg" alt="Thomas y Lupita jugando"></div>
+                <div><img src="fotos/relaxtito.jpeg" alt="Thomas relajado"></div>
+                <div><img src="fotos/titochiquito.jpeg" alt="Sammy y Lupita juntas"></div>
+                <div><img src="fotos/samypina.jpeg" alt="Thomas cachorro"></div>
+                <div><img src="fotos/mirada.jpeg" alt="Perro con mirada atenta"></div>
+            </main>
+        </section>
+        </main>
+        <div id="c1list">
+            <li><a class="c1list" href="index.html">Ir A Principal</a></li>
         </div>
-    </main>
+    </div>
     <footer>
         <p>&copy;2025 N1955</p>
     </footer>
