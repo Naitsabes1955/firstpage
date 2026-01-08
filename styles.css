@@ -142,6 +142,8 @@ header{
 
 
 .Info p{
+    padding-top: 20px;
+    padding-bottom: 20px;
     width: 60%;
 }
 
@@ -403,4 +405,28 @@ li{
     .layout img {
         height: 250px; /* Ajustamos un poco la altura en móviles */
     }
+}
+@media (min-width: 601px) and (max-width: 1024px) {
+    .proyectos-grid-container {
+        grid-template-columns: repeat(2, 1fr); /* 2 columnas */
+    }
+
+    .layout {
+        grid-template-columns: repeat(2, 1fr); /* 3 columnas */
+    }
+}
+/* Estilo normal del párrafo */
+
+#boton-interactivo{
+    background-color: transparent;
+    padding: 15px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    color: white;
+    box-shadow: none;
+}
+#boton-interactivo:hover{
+    transform: scale(1.05);
+    transition: all 0.3s ease;
+    background-color: rgb(134, 155, 201);
 }
