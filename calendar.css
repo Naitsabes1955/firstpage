@@ -1,0 +1,142 @@
+
+* {
+    align-items: center;
+    text-align: center;
+}
+
+h1 {
+    width: 600px auto;
+
+    background: linear-gradient(rgba(176, 196, 222, 0.8), rgba(0, 64, 128, 0.9)); 
+    border: 1px solid rgb(73, 80, 87);
+    padding: 1rem;
+    border-radius: 1000px;
+    cursor: pointer;
+    color: rgb(33, 37, 41);
+}
+
+h1:hover {
+    background: linear-gradient(rgba(0, 64, 128, 0.9), rgba(176, 196, 222, 0.8));
+}
+
+table {
+    width: 20%;
+    border-collapse: collapse;
+    color: #212529;
+    margin: 100px auto;
+    align-items: center;
+}
+
+table th {
+    border: 1px solid rgb(73, 80, 87);
+    background: rgba(222, 226, 230, 0.9);
+    padding: 12px;
+    border: 1px solid rgb(73, 80, 87); 
+}
+
+table td {
+    padding: 10px;
+    border: 1px solid rgb(73, 80, 87);
+    text-align: center;
+}
+
+table tr:hover {
+    background: linear-gradient(rgba(234, 239, 242, 0.8), rgba(211, 217, 222, 0.8));
+}
+
+body {
+    margin: 0 auto;
+    font-family: 'Times New Roman';
+    padding: 0;
+    box-sizing: border-box;
+    font-weight: bold;
+    line-height: 1.6;
+    background: linear-gradient(rgba(234, 239, 242, 0.8), rgba(255, 255, 255, 0.9)); 
+}
+
+section {
+    /* Gradiente de fondo formal */
+    background: linear-gradient(rgba(234, 239, 242, 0.8), rgba(255, 255, 255, 0.9)); 
+}
+
+.Month {
+    color: rgb(33, 37, 41);
+    font-size: 30px;
+    background: linear-gradient(rgba(176, 196, 222, 0.8), rgba(0, 64, 128, 0.9));
+    border: 1px solid rgb(73, 80, 87);
+    padding: 1rem;
+    border-radius: 1000px;
+    cursor: pointer;
+    color: rgb(33, 37, 41);
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.Month:hover {
+    background: linear-gradient(rgba(0, 64, 128, 0.9), rgba(176, 196, 222, 0.8));
+}
+
+.Back {
+    list-style: none;
+    text-decoration: none;
+    font-size: 15px;
+    color: rgb(0, 64, 128);
+    padding: 1rem;
+    border: 1px solid rgb(73, 80, 87);
+    border-radius: 100px;
+    background-color: rgba(234, 239, 242, 0.8);
+}
+
+.Back:hover {
+    background-color: rgba(176, 196, 222, 0.8); 
+    color: rgb(255, 255, 255); /
+}
+
+nav ul li a {
+    list-style: none;
+    text-decoration: none;
+}
+
+.Inv-days {
+    color: rgb(170, 170, 170); 
+}
+/* --- Diseño Responsive --- */
+
+/* --- Ajustes para Tablets y Celulares --- */
+
+@media (max-width: 992px) {
+    /* En tablets, permitimos que la tabla sea más ancha */
+    table {
+        width: 80% !important;
+    }
+}
+
+@media (max-width: 600px) {
+    /* En celulares, la tabla usa casi todo el ancho */
+    table {
+        width: 95% !important;
+        margin: 20px auto !important;
+    }
+
+    /* Reducimos el tamaño de la fuente para que los números no se amontonen */
+    table th, table td {
+        padding: 8px 2px !important;
+        font-size: 14px;
+    }
+
+    /* Ajustamos el botón del Mes */
+    .Month {
+        width: 90% !important;
+        font-size: 20px !important;
+        padding: 0.8rem !important;
+    }
+
+    /* Ajustamos el título principal */
+    h1 {
+        width: 90% !important;
+        font-size: 1.5rem !important;
+    }
+}
