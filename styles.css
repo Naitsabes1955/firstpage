@@ -224,6 +224,14 @@ header{
 
 /* Secciones de contacto y pie de página */
 
+
+
+.c1list:hover{
+    transform: scale(1.3s) ease;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5); 
+    transition: 0.5s;
+    border-radius: 15px;
+}
 .c1list{
     display: flex;
     flex-direction: column;
@@ -235,17 +243,13 @@ header{
 }
 .c1list{
     width: 50px auto;
-    padding: 2rem ;
+    padding: 1.5rem ;
     display: flex;
     justify-content: center;
     border: 2px solid color(black);
     cursor: pointer;
 }
-.c1list:hover{
-    border-color: violet;
-    transform: scale(1.3s);
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5); 
-}
+
 textarea{
     resize: vertical;
     height: 150px;
